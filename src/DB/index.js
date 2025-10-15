@@ -2,7 +2,9 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv'
 import { databaseName } from '../Constants/index.js';
 dotenv.config({path : '../.env'})
-const url =process.env.MONGODB_URL;
+const url = process.env.MONGODB_URL;
+console.log("URL : ",url);
+
 const dataBase = databaseName;
 
 const connectDB = async () => {

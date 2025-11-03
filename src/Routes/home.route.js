@@ -7,7 +7,6 @@ const homeRouter = Router();
 homeRouter.route('/homedata').get(sendDataHome)
 
 homeRouter.route('/setalldata').post(upload.single("image"),setData)
-
 homeRouter.route('/changeimage').post(upload.single("image"),changeImage)
 homeRouter.route('/changeName').post(changeName)
 homeRouter.route('/addnewskills').post(AddSkills);

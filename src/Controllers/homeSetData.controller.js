@@ -26,7 +26,7 @@ const setData = async (req, res) => {
 
         await home.deleteMany({});
 
-        const homes = home.create({
+        const homes = await home.create({
             name: name,
             titles: titles,
             detail: detail,

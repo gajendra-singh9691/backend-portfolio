@@ -77,7 +77,6 @@ const sendaboutskill = async (req,res) => {
 const aboutParagraphAdd = async (req, res) => {
     try {
         const { detail } = req.body;
-
         if (!detail) {
             throw new ApiError(400, "detail is required"); // Use 400 for bad input
         }

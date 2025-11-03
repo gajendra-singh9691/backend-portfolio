@@ -14,6 +14,7 @@ const storage = multer.diskStorage({
         const timestamp = Date.now();
         const ext = file.originalname.split(".").pop();
         const baseName = file.originalname.split(".").slice(0, -1).join(".");
+        console.log(`${baseName}_${timestamp}.${ext}`);
         cb(null, `${baseName}_${timestamp}.${ext}`);
     }
 })

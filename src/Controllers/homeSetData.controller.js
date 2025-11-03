@@ -14,7 +14,11 @@ const setData = async (req, res) => {
         }
 
         let profileImage = req.file.path;
+        console.log(profileImage);
+        
         if (!profileImage) {
+            console.log("Going");
+            
             throw new ApiError(404, "Image not found")
         }
 
